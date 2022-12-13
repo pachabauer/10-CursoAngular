@@ -12,4 +12,19 @@
 
     </p-card>
   </div>
+
+  <div class="col-4">
+    <p-card header="Ventas brutas" subheader="del año presente">
+      {{ventasNetas + 2000000| currency:'ARS ':'symbol-narrow': '1.2-2'}}
+
+
+    </p-card>
+  </div>
+  <div class="col-4">
+    <p-card header="Ganancia porcentual" subheader="del año presente">
+      {{porcentaje | percent}}
+
+
+    </p-card>
+  </div>
 </div>

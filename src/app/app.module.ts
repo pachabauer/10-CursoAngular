@@ -1,6 +1,8 @@
 import { LOCALE_ID, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 import { AppComponent } from './app.component';
 import { PrimeNgModule } from './prime-ng/prime-ng.module';
@@ -29,7 +31,8 @@ registerLocaleData(localeFr);
     PrimeNgModule,
     SharedModule,
     AppRouterModule,
-    VentasModule
+    VentasModule,
+    BrowserAnimationsModule
   ],
   providers: [
     {
